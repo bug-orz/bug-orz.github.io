@@ -671,17 +671,17 @@ img {
 /* ---------- Responsive ---------- */
 @media (max-width: 680px) {
   .container {
-    padding: 52px 20px 56px;
+    padding: 48px 18px 56px;
   }
   .hero {
     flex-direction: column;
     text-align: center;
-    gap: 22px;
+    gap: 20px;
   }
   .hero-avatar {
-    flex-basis: 136px;
-    width: 136px;
-    height: 136px;
+    flex-basis: 128px;
+    width: 128px;
+    height: 128px;
   }
   .hero-avatar img {
     border-radius: 20px;
@@ -693,25 +693,149 @@ img {
     justify-content: center;
   }
   .hero-name {
-    font-size: 29px;
+    font-size: 28px;
   }
-  .pub {
-    flex-direction: column;
-    gap: 12px;
+  .section {
+    margin-top: 48px;
+    padding-top: 26px;
   }
-  .pub-thumb {
-    flex-basis: auto;
-    width: 100%;
+  .section-heading {
+    font-size: 22px;
   }
-  .pub-thumb img {
-    height: 150px;
+  .section-note {
+    margin-bottom: 16px;
+  }
+
+  /* Research tabs — compact, stay on one row when possible */
+  .research-tabs {
+    padding: 4px;
+    gap: 2px;
+    margin-bottom: 18px;
   }
   .research-tab {
-    padding: 6px 14px;
-    font-size: 13.5px;
+    padding: 6px 12px;
+    font-size: 13px;
+    gap: 5px;
   }
   .research-tab .tab-index {
+    font-size: 11.5px;
+  }
+  .tab-panel .module-desc {
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+
+  /* Pub cards — compact row: small thumb left, text right */
+  .pub-list {
+    gap: 10px;
+  }
+  .pub {
+    flex-direction: row;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 14px;
+  }
+  .pub-thumb {
+    flex: 0 0 96px;
+    width: 96px;
+    border-radius: 10px;
+  }
+  .pub-thumb img {
+    height: 66px;
+  }
+  .pub-title {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .pub-authors {
+    font-size: 12.5px;
+    margin: 4px 0 0;
+    line-height: 1.55;
+  }
+  .pub-tags {
+    margin: 6px 0 2px;
+    gap: 5px;
+  }
+  .chip {
+    font-size: 11.5px;
+    padding: 1px 8px;
+  }
+  .pub-links {
+    font-size: 12.5px;
+    gap: 2px 10px;
+    margin-top: 2px;
+  }
+
+  /* Projects — tighter cards */
+  .proj-list {
+    gap: 10px;
+  }
+  .proj {
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+  .proj-name {
+    font-size: 14.5px;
+  }
+  .proj-stars {
     font-size: 12px;
+  }
+  .proj-desc {
+    font-size: 13px;
+    margin-top: 3px;
+  }
+
+  /* Experience / lists */
+  .exp-item {
+    padding: 12px 0;
+  }
+  .exp-role {
+    font-size: 15px;
+  }
+  .exp-meta {
+    font-size: 12.5px;
+  }
+  .clean-list li {
+    padding: 7px 0 7px 20px;
+    font-size: 14px;
+  }
+  .date {
+    font-size: 12px;
+  }
+  .visitor {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-avatar {
+    flex-basis: 108px;
+    width: 108px;
+    height: 108px;
+  }
+  .hero-name {
+    font-size: 24px;
+  }
+  .hero-bio p {
+    font-size: 14px;
+  }
+  .pub {
+    gap: 10px;
+    padding: 10px;
+  }
+  .pub-thumb {
+    flex: 0 0 84px;
+    width: 84px;
+  }
+  .pub-thumb img {
+    height: 58px;
+  }
+  .pub-title {
+    font-size: 13.5px;
+  }
+  .research-tab {
+    padding: 5px 10px;
+    font-size: 12.5px;
   }
 }
 
