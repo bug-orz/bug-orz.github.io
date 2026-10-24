@@ -608,20 +608,6 @@ img {
   margin-left: 6px;
 }
 
-/* ---------- Footer ---------- */
-.footer {
-  margin-top: 56px;
-  padding-top: 22px;
-  border-top: 1px solid var(--line);
-  text-align: center;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 13px;
-  color: var(--ink-3);
-}
-
 /* ---------- Visitor map ---------- */
 .visitor {
   margin-top: 28px;
