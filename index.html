@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yuanhao Yue (岳元浩)</title>
   <meta name="author" content="Yuanhao Yue">
-  <meta name="description" content="Yuanhao Yue (岳元浩) — Research on Post-training for LLMs: knowledge distillation, data synthesis, factuality and evaluation.">
+  <meta name="description" content="Yuanhao Yue (岳元浩) — Research on Post-training for LLMs: Agentic RL, SFT and Evaluations.">
   <meta property="og:title" content="Yuanhao Yue (岳元浩)">
-  <meta property="og:description" content="Research on Post-training for LLMs: knowledge distillation, data synthesis, factuality and evaluation.">
+  <meta property="og:description" content="Research on Post-training for LLMs: Agentic RL, SFT and Evaluations.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon"
@@ -22,11 +22,11 @@
     <a class="nav-name" href="#top">Yuanhao Yue</a>
     <nav class="nav-links">
       <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#service">Service</a>
       <a href="#awards">Awards</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light / dark theme">🌞</button>
   </header>
 
   <main class="container" id="top">
@@ -42,20 +42,21 @@
           I received my master's degree at <a href="https://cs.fudan.edu.cn/">School of Computer Science, Fudan University</a> in 2025.
           Prior to that, I received my bachelor's degree at <a href="https://ai.seu.edu.cn/">School of Computer Science and Engineering, Southeast University</a> in 2022.
           I was also a visiting student at the <a href="https://nlp.westlake.edu.cn/">Text Intelligence Lab, Westlake University</a> in 2023
-          and an exchange student at <a href="https://eecs.ntu.edu.tw/">College of Electrical Engineering and Computer Science, National Taiwan University</a> in 2019.
+          and an exchange student at the <a href="https://eecs.ntu.edu.tw/">College of Electrical Engineering and Computer Science, National Taiwan University</a> in 2019.
         </p>
         <p class="note-line">
-          I ended my career at <strong>Tongyi Lab, Alibaba PAI</strong> in July 2026 and had a wonderful time there. I am no longer affiliated with the team.
+          I ended my career at <strong>Tongyi Lab and Alibaba PAI</strong> in July 2026 and had a wonderful time there. I am no longer affiliated with the team.
         </p>
         <p>
-          My research focuses on <strong>Post-training for LLMs</strong>, including: knowledge distillation, data synthesis, factuality and evaluation.
+          My research focuses on <strong>Post-training for LLMs</strong>, centered on three directions:
+          <strong>Agentic RL</strong>, <strong>SFT</strong>, and <strong>Evaluations</strong>.
         </p>
         <p class="muted">
           I'm always open to new opportunities or collaborations! Reach me at <a href="mailto:yhyue22@m.fudan.edu.cn">yhyue22@m.fudan.edu.cn</a>.
         </p>
         <nav class="social">
           <a href="mailto:yhyue22@m.fudan.edu.cn">✉️ Email</a>
-          <a href="https://scholar.google.com/citations?user=HKy62pwAAAAJ&hl">🎓 Scholar <span class="cite-count">(800+ citations)</span></a>
+          <a href="https://scholar.google.com/citations?user=HKy62pwAAAAJ&hl">🎓 Scholar <span class="cite-count">(900+ citations)</span></a>
           <a href="https://github.com/bug-orz">💻 GitHub</a>
         </nav>
       </div>
@@ -64,122 +65,237 @@
     <!-- ===================== RESEARCH ===================== -->
     <section class="section reveal" id="research">
       <h2 class="section-heading">📚 Research</h2>
-      <p class="section-note">(* indicates equal contribution)</p>
+      <p class="section-note">Selected publications, grouped by research direction. (* indicates equal contribution)</p>
 
-      <h3 class="subheading">Knowledge Distillation</h3>
-      <div class="pub-list">
-
-        <article class="pub">
-          <a class="pub-thumb" href="https://arxiv.org/abs/2405.13448">
-            <img src="my_images/tapir.jpg" alt="TAPIR Distill">
-          </a>
-          <div class="pub-body">
-            <a class="pub-title" href="https://arxiv.org/abs/2405.13448">Distilling Instruction-following Abilities of Large Language Models with Task-aware Curriculum Planning</a>
-            <p class="pub-authors"><strong>Yuanhao Yue</strong>, Chengyu Wang<sup>†</sup>, Jun Huang, Peng Wang<sup>†</sup></p>
-            <div class="pub-tags"><span class="chip chip--conf">EMNLP 2024 Findings</span></div>
-            <p class="pub-links">
-              <a href="https://arxiv.org/pdf/2405.13448">Paper</a>
-              <a href="https://github.com/alibaba/EasyNLP/tree/master/examples/tapir/">Code</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="pub">
-          <a class="pub-thumb" href="https://arxiv.org/abs/2412.04871">
-            <img src="my_images/coling.jpg" alt="Data Augmentation Models">
-          </a>
-          <div class="pub-body">
-            <a class="pub-title" href="https://arxiv.org/abs/2412.04871">Building a Family of Data Augmentation Models for Low-cost LLM Fine-tuning on the Cloud</a>
-            <p class="pub-authors"><strong>Yuanhao Yue</strong>, Chengyu Wang<sup>†</sup>, Jun Huang, Peng Wang<sup>†</sup></p>
-            <div class="pub-tags"><span class="chip chip--conf">COLING 2025 (Oral)</span></div>
-            <p class="pub-links">
-              <a href="https://arxiv.org/pdf/2412.04871">Paper</a>
-              <a href="https://huggingface.co/alibaba-pai/Qwen2-1.5B-Instruct-Refine">Huggingface</a>
-              <a href="https://github.com/bug-orz/bug-orz.github.io/blob/main/my_images/coling_oral_share.pdf">Slides</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="pub">
-          <a class="pub-thumb" href="https://arxiv.org/abs/2504.15027">
-            <img src="my_images/distillqwen.jpg" alt="DistilQwen2.5">
-          </a>
-          <div class="pub-body">
-            <a class="pub-title" href="https://arxiv.org/abs/2504.15027">DistilQwen2.5: Industrial Practices of Training Distilled Open Lightweight Language Models</a>
-            <p class="pub-authors">Chengyu Wang*, Junbing Yan*, <strong>Yuanhao Yue</strong>, Jun Huang<sup>†</sup></p>
-            <div class="pub-tags"><span class="chip chip--conf">ACL 2025</span></div>
-            <p class="pub-links">
-              <a href="https://arxiv.org/pdf/2504.15027">Paper</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="pub">
-          <a class="pub-thumb" href="https://arxiv.org/abs/2505.20888">
-            <img src="my_images/easydistill.png" alt="EasyDistill">
-          </a>
-          <div class="pub-body">
-            <a class="pub-title" href="https://arxiv.org/abs/2505.20888">EasyDistill: A Comprehensive Toolkit for Effective Knowledge Distillation of Large Language Models</a>
-            <p class="pub-authors">Chengyu Wang, Junbing Yan, Wenrui Cai, <strong>Yuanhao Yue</strong>, Jun Huang<sup>†</sup></p>
-            <div class="pub-tags"><span class="chip chip--preprint">arXiv</span></div>
-            <p class="pub-links">
-              <a href="https://arxiv.org/pdf/2505.20888">Paper</a>
-              <a href="https://github.com/modelscope/easydistill">Code</a>
-            </p>
-          </div>
-        </article>
-
+      <div class="research-tabs" role="tablist" aria-label="Research directions">
+        <button class="research-tab active" role="tab" id="tab-agentic-rl" aria-controls="agentic-rl" aria-selected="true" data-tab="agentic-rl">
+          <span class="tab-index">01</span>Agentic RL
+        </button>
+        <button class="research-tab" role="tab" id="tab-sft" aria-controls="sft" aria-selected="false" data-tab="sft">
+          <span class="tab-index">02</span>SFT
+        </button>
+        <button class="research-tab" role="tab" id="tab-evaluations" aria-controls="evaluations" aria-selected="false" data-tab="evaluations">
+          <span class="tab-index">03</span>Evaluations
+        </button>
       </div>
 
-      <h3 class="subheading">Factuality and Evaluations</h3>
-      <div class="pub-list">
+      <!-- ---------- Panel 01 · Agentic RL ---------- -->
+      <div class="tab-panel active" id="agentic-rl" role="tabpanel" aria-labelledby="tab-agentic-rl">
+        <p class="module-desc">Reinforcement learning for LLMs and agents — RLHF / preference optimization, tool use, multi-turn reasoning, and long-horizon task completion.</p>
+        <div class="pub-list">
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://arxiv.org/abs/2310.07521">
-            <img src="my_images/survey.jpg" alt="Factuality Survey">
-          </a>
-          <div class="pub-body">
-            <a class="pub-title" href="https://arxiv.org/abs/2310.07521">Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity</a>
-            <p class="pub-authors"><strong>Cunxiang Wang*, Xiaoze Liu*, Yuanhao Yue*</strong>, Qipeng Guo, … , Linyi Yang, Jindong Wang, Xing Xie, Zheng Zhang and Yue Zhang<sup>†</sup></p>
-            <div class="pub-tags"><span class="chip chip--journal">ACM Computing Surveys</span></div>
-            <p class="pub-links">
-              <a href="https://arxiv.org/pdf/2310.07521">Paper</a>
-              <a href="https://github.com/wangcunxiang/LLM-Factuality-Survey">Code</a>
-            </p>
-          </div>
-        </article>
+          <article class="pub">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2609.15051">
+              <img src="my_images/prompt-scaffolding.jpg" alt="Prompt Scaffolding">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://arxiv.org/abs/2609.15051">Not All Prompts Are Equal: Exploration-Guided Prompt Scaffolding for Multimodal Reinforcement Post-Training</a>
+              <p class="pub-authors"><strong>Yuanhao Yue</strong>, Qianli Ma, Chengyu Wang, Haoting Wang, Lei Shen, Jun Huang</p>
+              <div class="pub-tags"><span class="chip chip--conf">EMNLP 2026</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2609.15051">Paper</a>
+                <a href="https://mqleet.github.io/EPS-ProjectPage/">Project Page</a>
+              </p>
+            </div>
+          </article>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://www.amazon.science/publications/evaluating-open-qa-evaluation">
-            <img src="my_images/open-qa.jpg" alt="Evaluating Open-QA">
-          </a>
-          <div class="pub-body">
-            <a class="pub-title" href="https://www.amazon.science/publications/evaluating-open-qa-evaluation">Evaluating Open-QA evaluation</a>
-            <p class="pub-authors">Cunxiang Wang*, Sirui Cheng*, Qipeng Guo, <strong>Yuanhao Yue</strong>, … , Zheng Zhang, Yue Zhang<sup>†</sup></p>
-            <div class="pub-tags"><span class="chip chip--conf">NeurIPS 2023</span></div>
-            <p class="pub-links">
-              <a href="https://arxiv.org/pdf/2305.12421">Paper</a>
-              <a href="https://github.com/wangcunxiang/QA-Eval">Code</a>
-            </p>
-          </div>
-        </article>
+          <article class="pub">
+            <a class="pub-thumb" href="https://aclanthology.org/2026.acl-industry.37/">
+              <img src="my_images/agenticqwen.jpg" alt="AgenticQwen">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://aclanthology.org/2026.acl-industry.37/">AgenticQwen: Training Small Agentic Language Models with Dual Data Flywheels for Industrial-Scale Tool Use</a>
+              <p class="pub-authors">Yuanjie Lyu, Chengyu Wang, Haonan Zheng, <strong>Yuanhao Yue</strong>, Junbing Yan, Ming Wang, Jun Huang</p>
+              <div class="pub-tags"><span class="chip chip--conf">ACL 2026</span></div>
+              <p class="pub-links">
+                <a href="https://aclanthology.org/2026.acl-industry.37.pdf">Paper</a>
+              </p>
+            </div>
+          </article>
 
-        <article class="pub">
-          <a class="pub-thumb" href="https://github.com/SuperGPQA/SuperGPQA">
-            <img src="my_images/supergpqa.jpg" alt="SuperGPQA">
-          </a>
-          <div class="pub-body">
-            <a class="pub-title" href="https://github.com/SuperGPQA/SuperGPQA">SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines</a>
-            <p class="pub-authors">M-A-P, ByteDance Seed</p>
-            <div class="pub-tags"><span class="chip chip--conf">NeurIPS 2025</span></div>
-            <p class="pub-links">
-              <a href="https://github.com/SuperGPQA/SuperGPQA">Website</a>
-              <a href="https://www.arxiv.org/pdf/2502.14739">Paper</a>
-              <a href="https://huggingface.co/datasets/m-a-p/SuperGPQA">Huggingface</a>
-              <a href="https://supergpqa.github.io/#Dataset">Leaderboard</a>
-            </p>
+          <article class="pub">
+            <a class="pub-thumb" href="https://dl.acm.org/doi/10.1145/3770855.3817780">
+              <img src="my_images/selfevo-kd.jpg" alt="Self-Evolutionary Reinforced Knowledge Distillation">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://dl.acm.org/doi/10.1145/3770855.3817780">Self-Evolutionary Reinforced Knowledge Distillation for Multi-Modal Tool-Use Agents</a>
+              <p class="pub-authors">Lei Shen, Chengyu Wang, Yuanjie Lyu, <strong>Yuanhao Yue</strong>, Jun Huang, Zhongmin Cai</p>
+              <div class="pub-tags"><span class="chip chip--conf">SIGKDD 2026</span></div>
+              <p class="pub-links">
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3770855.3817780">Paper</a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- Panel 02 · SFT ---------- -->
+      <div class="tab-panel" id="sft" role="tabpanel" aria-labelledby="tab-sft">
+        <p class="module-desc">Supervised fine-tuning and knowledge distillation — data synthesis, curriculum design, and industrial practices for training lightweight LLMs.</p>
+        <div class="pub-list">
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2605.11629">
+              <img src="my_images/omnithoughtvis.jpg" alt="OmniThoughtVis">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://arxiv.org/abs/2605.11629">OmniThoughtVis: A Scalable Distillation Pipeline for Deployable Multimodal Reasoning Models</a>
+              <p class="pub-authors"><strong>Yuanhao Yue</strong>, Chengyu Wang, Yuanjie Lyu, Lei Shen, Jun Huang</p>
+              <div class="pub-tags"><span class="chip chip--conf">EMNLP 2026</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2605.11629">Paper</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2405.13448">
+              <img src="my_images/tapir.jpg" alt="TAPIR Distill">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://arxiv.org/abs/2405.13448">Distilling Instruction-following Abilities of Large Language Models with Task-aware Curriculum Planning</a>
+              <p class="pub-authors"><strong>Yuanhao Yue</strong>, Chengyu Wang<sup>†</sup>, Jun Huang, Peng Wang<sup>†</sup></p>
+              <div class="pub-tags"><span class="chip chip--conf">EMNLP 2024 Findings</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2405.13448">Paper</a>
+                <a href="https://github.com/alibaba/EasyNLP/tree/master/examples/tapir/">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2412.04871">
+              <img src="my_images/coling.jpg" alt="Data Augmentation Models">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://arxiv.org/abs/2412.04871">Building a Family of Data Augmentation Models for Low-cost LLM Fine-tuning on the Cloud</a>
+              <p class="pub-authors"><strong>Yuanhao Yue</strong>, Chengyu Wang<sup>†</sup>, Jun Huang, Peng Wang<sup>†</sup></p>
+              <div class="pub-tags"><span class="chip chip--conf">COLING 2025 (Oral)</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2412.04871">Paper</a>
+                <a href="https://huggingface.co/alibaba-pai/Qwen2-1.5B-Instruct-Refine">Huggingface</a>
+                <a href="https://github.com/bug-orz/bug-orz.github.io/blob/main/my_images/coling_oral_share.pdf">Slides</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2504.15027">
+              <img src="my_images/distillqwen.jpg" alt="DistilQwen2.5">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://arxiv.org/abs/2504.15027">DistilQwen2.5: Industrial Practices of Training Distilled Open Lightweight Language Models</a>
+              <p class="pub-authors">Chengyu Wang*, Junbing Yan*, <strong>Yuanhao Yue</strong>, Jun Huang<sup>†</sup></p>
+              <div class="pub-tags"><span class="chip chip--conf">ACL 2025</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2504.15027">Paper</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2505.20888">
+              <img src="my_images/easydistill.png" alt="EasyDistill">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://arxiv.org/abs/2505.20888">EasyDistill: A Comprehensive Toolkit for Effective Knowledge Distillation of Large Language Models</a>
+              <p class="pub-authors">Chengyu Wang, Junbing Yan, Wenrui Cai, <strong>Yuanhao Yue</strong>, Jun Huang<sup>†</sup></p>
+              <div class="pub-tags"><span class="chip chip--conf">EMNLP 2025</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2505.20888">Paper</a>
+                <a href="https://github.com/modelscope/easydistill">Code</a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ---------- Panel 03 · Evaluations ---------- -->
+      <div class="tab-panel" id="evaluations" role="tabpanel" aria-labelledby="tab-evaluations">
+        <p class="module-desc">Benchmarks and analysis for LLM capabilities — factuality, open-domain QA evaluation, and graduate-level knowledge assessment.</p>
+        <div class="pub-list">
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2310.07521">
+              <img src="my_images/survey.jpg" alt="Factuality Survey">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://arxiv.org/abs/2310.07521">Survey on Factuality in Large Language Models: Knowledge, Retrieval and Domain-Specificity</a>
+              <p class="pub-authors"><strong>Cunxiang Wang*, Xiaoze Liu*, Yuanhao Yue*</strong>, Qipeng Guo, … , Linyi Yang, Jindong Wang, Xing Xie, Zheng Zhang and Yue Zhang<sup>†</sup></p>
+              <div class="pub-tags"><span class="chip chip--journal">ACM Computing Surveys</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2310.07521">Paper</a>
+                <a href="https://github.com/wangcunxiang/LLM-Factuality-Survey">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://github.com/SuperGPQA/SuperGPQA">
+              <img src="my_images/supergpqa.jpg" alt="SuperGPQA">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://github.com/SuperGPQA/SuperGPQA">SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines</a>
+              <p class="pub-authors">M-A-P, ByteDance Seed</p>
+              <div class="pub-tags"><span class="chip chip--conf">NeurIPS 2025</span></div>
+              <p class="pub-links">
+                <a href="https://github.com/SuperGPQA/SuperGPQA">Website</a>
+                <a href="https://www.arxiv.org/pdf/2502.14739">Paper</a>
+                <a href="https://huggingface.co/datasets/m-a-p/SuperGPQA">Huggingface</a>
+                <a href="https://supergpqa.github.io/#Dataset">Leaderboard</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb" href="https://www.amazon.science/publications/evaluating-open-qa-evaluation">
+              <img src="my_images/open-qa.jpg" alt="Evaluating Open-QA">
+            </a>
+            <div class="pub-body">
+              <a class="pub-title" href="https://www.amazon.science/publications/evaluating-open-qa-evaluation">Evaluating Open-QA evaluation</a>
+              <p class="pub-authors">Cunxiang Wang*, Sirui Cheng*, Qipeng Guo, <strong>Yuanhao Yue</strong>, … , Zheng Zhang, Yue Zhang<sup>†</sup></p>
+              <div class="pub-tags"><span class="chip chip--conf">NeurIPS 2023</span></div>
+              <p class="pub-links">
+                <a href="https://arxiv.org/pdf/2305.12421">Paper</a>
+                <a href="https://github.com/wangcunxiang/QA-Eval">Code</a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section reveal" id="projects">
+      <h2 class="section-heading">🛠 Projects</h2>
+      <div class="proj-list">
+
+        <div class="proj">
+          <div class="proj-head">
+            <a class="proj-name" href="https://github.com/QwenLM/Qwen3">QwenLM/Qwen3</a>
+            <span class="proj-stars">★ 27.7k</span>
           </div>
-        </article>
+          <p class="proj-desc">Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud.</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <a class="proj-name" href="https://github.com/alibaba/EasyNLP">alibaba/EasyNLP</a>
+            <span class="proj-stars">★ 2.2k</span>
+          </div>
+          <p class="proj-desc">EasyNLP: A Comprehensive and Easy-to-use NLP Toolkit</p>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <a class="proj-name" href="https://github.com/modelscope/easydistill">modelscope/easydistill</a>
+            <span class="proj-stars">★ 482</span>
+          </div>
+          <p class="proj-desc">A toolkit on knowledge distillation for large language models</p>
+        </div>
 
       </div>
     </section>
@@ -195,7 +311,7 @@
       </div>
 
       <div class="exp-item">
-        <div class="exp-role">Research Intern @ Alibaba Cloud</div>
+        <div class="exp-role">Research Intern @ Alibaba PAI</div>
         <div class="exp-meta">Dec 2023 – Oct 2024 · Supervised by <a href="https://chywang.github.io/">Chengyu Wang</a></div>
         <div class="exp-meta">Research Interests: LLM Distillation, Instruction Tuning</div>
       </div>
@@ -233,6 +349,11 @@
       </ul>
     </section>
 
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer reveal">
+      <p>© 2026 Yuanhao Yue · 岳元浩 — Last updated: October 2026</p>
+    </footer>
+
     <!-- ===================== VISITOR MAP ===================== -->
     <div class="visitor reveal">
       <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=MTvyXU-N79yrhu1LaSOQyUIghbOUY2fB5XfPPT1YgCI&cl=ffffff&w=320"></script>
@@ -243,22 +364,6 @@
   <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 
   <script>
-    // Theme toggle (default dark, persisted in localStorage)
-    (function () {
-      var root = document.documentElement;
-      var btn = document.getElementById('themeToggle');
-      var saved = localStorage.getItem('theme');
-      var theme = saved || 'dark';
-      root.setAttribute('data-theme', theme);
-      btn.textContent = theme === 'dark' ? '🌞' : '🌙';
-      btn.addEventListener('click', function () {
-        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        btn.textContent = next === 'dark' ? '🌞' : '🌙';
-      });
-    })();
-
     // Sticky nav + back-to-top on scroll
     (function () {
       var topnav = document.getElementById('topnav');
@@ -278,6 +383,60 @@
       toTop.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
+    })();
+
+    // Research tabs — switch modules horizontally
+    (function () {
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.research-tab'));
+      var panels = Array.prototype.slice.call(document.querySelectorAll('.tab-panel'));
+      var VALID = ['agentic-rl', 'sft', 'evaluations'];
+
+      function activate(id, updateUrl) {
+        if (VALID.indexOf(id) < 0) id = VALID[0];
+        tabs.forEach(function (t) {
+          var on = t.getAttribute('data-tab') === id;
+          t.classList.toggle('active', on);
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        panels.forEach(function (p) {
+          p.classList.toggle('active', p.id === id);
+        });
+        try { localStorage.setItem('research-tab', id); } catch (e) {}
+        if (updateUrl && history.replaceState) {
+          history.replaceState(null, '', '#' + id);
+        }
+      }
+
+      tabs.forEach(function (t, i) {
+        t.addEventListener('click', function () {
+          activate(t.getAttribute('data-tab'), true);
+        });
+        t.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            var dir = e.key === 'ArrowRight' ? 1 : -1;
+            var next = tabs[(i + dir + tabs.length) % tabs.length];
+            next.focus();
+            activate(next.getAttribute('data-tab'), true);
+          }
+        });
+      });
+
+      // Initial state: URL hash > localStorage > first tab
+      var hash = (location.hash || '').replace('#', '');
+      var saved = null;
+      try { saved = localStorage.getItem('research-tab'); } catch (e) {}
+      var initial = VALID.indexOf(hash) >= 0 ? hash : saved;
+      activate(initial, false);
+      // The browser may fail to scroll to a panel that was display:none at parse
+      // time — scroll explicitly once it is visible (instant, ignoring the
+      // page's smooth scroll-behavior).
+      if (VALID.indexOf(hash) >= 0) {
+        var target = document.getElementById(hash);
+        if (target && target.scrollIntoView) {
+          target.scrollIntoView({ behavior: 'instant', block: 'start' });
+        }
+      }
     })();
 
     // Reveal on scroll
